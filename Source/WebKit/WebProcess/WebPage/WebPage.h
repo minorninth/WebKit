@@ -1084,6 +1084,7 @@ public:
     void relayAccessibilityNotification(String&&, RetainPtr<NSData>&&);
     void relayAriaNotifyNotification(WebCore::AriaNotifyData&&);
     void relayLiveRegionNotification(WebCore::LiveRegionAnnouncementData&&);
+    void didDisplayCaptions(Vector<String>&&);
 #endif
 
     RefPtr<WebImage> scaledSnapshotWithOptions(const WebCore::IntRect&, double additionalScaleFactor, SnapshotOptions);
